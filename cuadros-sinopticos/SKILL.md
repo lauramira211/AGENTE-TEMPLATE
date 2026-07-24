@@ -12,7 +12,7 @@ description: >
   información.
 metadata:
   author: laura
-  version: "2.1.0"
+  version: "2.2.0"
 allowed-tools: mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__search-designs mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__copy-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__read-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__edit-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__export-design WebSearch WebFetch Read
 ---
 
@@ -20,6 +20,23 @@ allowed-tools: mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__search-designs mcp__7a
 
 Laura da un tema. Tú entregas el diseño terminado y editable en su Canva.
 No preguntes detalles que puedas decidir tú.
+
+## Regla que manda sobre todas las demás
+
+> **Lo único que cambia es la información: el texto. Nada más.**
+
+Prohibido, aunque parezca una mejora:
+
+- Borrar elementos, incluso decorativos o que estorben
+- Agregar elementos: cajas de texto, notas adhesivas, formas, imágenes, páginas
+- Mover, redimensionar o rotar cualquier cosa
+- Cambiar colores, fuentes, tamaños de letra o alineaciones
+- Reorganizar la estructura del diseño
+
+Si el texto no cabe, **se acorta el texto**. Nunca se agranda la caja ni se baja
+la fuente. Si algo del diseño parece sobrar, se lo dices a Laura y ella decide.
+
+Laura ha corregido este punto dos veces. Es innegociable.
 
 ## Cómo funciona su cuenta
 
@@ -130,6 +147,15 @@ El texto va dentro de cajas de tamaño fijo. La plantilla no crece.
 > **Nunca borres un elemento gráfico.** Ni formas decorativas, ni íconos, ni
 > gráficos que no puedas editar. Lo único que cambia entre la plantilla y la
 > entrega es el contenido del tema. Si algo estorba, dilo y que Laura decida.
+
+### Si trabajas por el navegador
+
+En los diseños tipo pizarra, **un doble clic que cae en zona vacía crea una nota
+adhesiva** con lo que escribas después. Eso es agregar un elemento, o sea está
+prohibido. Antes de escribir, confirma con una captura que el cursor entró en
+una caja de texto existente. Una caja a la vez, verificando. Si aparece un
+elemento que tú creaste sin querer, díselo a Laura de inmediato: borrarlo
+requiere su permiso.
 
 ## Seguridad
 
