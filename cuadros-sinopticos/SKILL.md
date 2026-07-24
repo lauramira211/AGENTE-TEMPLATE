@@ -12,7 +12,7 @@ description: >
   información.
 metadata:
   author: laura
-  version: "2.0.0"
+  version: "2.1.0"
 allowed-tools: mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__search-designs mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__copy-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__read-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__edit-design mcp__7a57a327-7c1e-43ef-8728-d0e55eeaa17c__export-design WebSearch WebFetch Read
 ---
 
@@ -61,6 +61,19 @@ trabajo. Se buscan en vivo, se copian, y se rellenan.
         entregado; "Gráfica Cuadro Sinóptico Moderno Colorido" es plantilla.
       - Si no aparece nada del formato pedido, dilo y pregunta cuál usar. No
         inventes un diseño ni recurras a `generate-design`.
+
+- [ ] 3b. **Verifica que el diseño se pueda rellenar, ANTES de copiarlo.** Llama
+      `read-design` en modo solo lectura (sin `open_transaction`) pidiendo
+      `design_content`. Tres resultados posibles:
+      - **Lorem ipsum o texto de relleno** → plantilla limpia. Esta es la buena.
+      - **Contenido real de un tema** → ya se usó para un trabajo. Descártala
+        aunque su título sea genérico.
+      - **`design_content` vacío, o la página marcada `(UNSUPPORTED)`** → es un
+        "Diseño interactivo" de Canva. Su texto no es texto editable y la API no
+        puede tocarlo. **No la copies.** Pasa a la siguiente candidata de la
+        cuenta.
+
+      Verificar antes de copiar evita llenar su cuenta de copias inservibles.
 
 - [ ] 4. **Copia el diseño** con `copy-design`. Trabaja siempre sobre la copia.
       Titula la copia con el tema real, no con el nombre de la plantilla.
@@ -132,11 +145,28 @@ El texto va dentro de cajas de tamaño fijo. La plantilla no crece.
 - Si el tema incluye datos personales de Laura o de terceros, no los metas en el
   diseño sin que ella lo pida explícitamente.
 
+## Cuando ninguna plantilla de la cuenta se puede rellenar
+
+Puede pasar que el formato pedido solo exista en su cuenta como "Diseño
+interactivo". En ese caso:
+
+- **No busques plantillas fuera de su cuenta.** Ni galerías públicas de Canva,
+  ni links de plantillas, ni `generate-design`. El material de trabajo son sus
+  diseños y nada más.
+- **El navegador ya no es salida.** Canva rechaza el navegador automatizado con
+  "Actualiza tu navegador" y congela el editor. Verificado el 2026-07-24. No
+  prometas rellenarlo por ahí.
+- **Lo que sí haces:** entrégale el contenido ya investigado y redactado, caja
+  por caja, para que ella lo pegue abriendo la plantilla en su propio Chrome.
+  El trabajo de investigación y redacción no se pierde.
+
 ## Ground rules
 
 - SIEMPRE investiga con `WebSearch` cuando no haya archivo adjunto.
 - SIEMPRE entrega el `edit_url`.
+- SIEMPRE verifica que el diseño exponga texto antes de copiarlo.
 - SIEMPRE copia antes de editar.
+- NUNCA uses una plantilla que no esté en la cuenta de Canva de Laura.
 - NUNCA llames `generate-design`, `generate-design-structured`,
   `search-brand-templates` ni `create-design-from-brand-template` — no funcionan
   sin Pro o gastan cuota.
