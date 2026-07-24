@@ -94,6 +94,10 @@ El texto va dentro de cajas de tamaño fijo. La plantilla no crece.
 - **Respeta la longitud del placeholder original.** Si el texto que reemplazas
   tenía ~30 caracteres, el tuyo debe rondar los 30. Pasarse desborda la caja o
   encoge la fuente hasta volverla ilegible.
+- **El desbordamiento depende del ancho real de las letras, no del número de
+  caracteres.** Dos palabras de igual longitud pueden comportarse distinto:
+  "AUTOMATIZA" desbordó donde "RESULTADOS", del mismo largo, cabía. Ante la
+  duda, acorta y verifica en el thumbnail del paso 7.
 - **Sin guiones ni rayas** para separar ideas. Frases naturales completas.
 - **Ortografía y gramática correctas**, con tildes. Es material académico.
 - **Jerarquía real:** en un cuadro sinóptico la rama madre es más general que
@@ -103,11 +107,16 @@ El texto va dentro de cajas de tamaño fijo. La plantilla no crece.
 
 ## Lo que no se puede editar
 
-- **Gráficos nativos de Canva** (barras, pastel, porcentajes) no son texto y no
-  se editan con `replace_text`. Si la plantilla los trae, o eliges otra
-  plantilla, o dejas el gráfico y avisas a Laura que ese elemento lo ajusta ella
-  a mano.
+- **Gráficos nativos de Canva** (barras, pastel, dona de porcentajes) son
+  invisibles para esta API: sus etiquetas, valores y fuente no se pueden leer ni
+  editar. Si la plantilla los trae, o eliges otra plantilla, o dejas el gráfico
+  y avisas a Laura que esos números los ajusta ella en la tabla de datos del
+  gráfico, dentro de Canva.
 - **Imágenes e íconos** tampoco. Solo se reemplaza texto.
+
+> **Nunca borres un elemento gráfico.** Ni formas decorativas, ni íconos, ni
+> gráficos que no puedas editar. Lo único que cambia entre la plantilla y la
+> entrega es el contenido del tema. Si algo estorba, dilo y que Laura decida.
 
 ## Seguridad
 
