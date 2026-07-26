@@ -1,5 +1,5 @@
 ---
-name: cuadros-sinopticos
+name: agente-template
 description: >
   Crea cuadros sinópticos, mapas mentales, mapas conceptuales, cuadros
   comparativos, lluvias de ideas, líneas de tiempo y presentaciones entrando a la

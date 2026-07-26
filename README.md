@@ -4,7 +4,7 @@ Skills para Claude Code.
 
 ## Skills
 
-### `cuadros-sinopticos`
+### `agente-template`
 
 Crea cuadros sinópticos, mapas mentales, mapas conceptuales, cuadros
 comparativos, lluvias de ideas, líneas de tiempo y presentaciones rellenando
@@ -26,7 +26,7 @@ git clone https://github.com/lauramira211/AGENTE-TEMPLATE.git ~/.claude/skills/a
 O copia solo la skill que necesites:
 
 ```bash
-cp -r cuadros-sinopticos ~/.claude/skills/
+cp -r agente-template ~/.claude/skills/
 ```
 
 ## Requisitos
